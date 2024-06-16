@@ -63,9 +63,8 @@ func main() {
 
 	fmt.Println("ROUTER STARTED")
 
+	makeDbConnection() //making mera db connection here
 	defer db.Close()
-	//making mera db connection here
-	makeDbConnection()
 
 	router := gin.Default()
 
